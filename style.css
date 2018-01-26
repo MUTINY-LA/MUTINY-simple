@@ -1,0 +1,67 @@
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+body, #root {
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+  background: #bd2020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  max-height: 90vh;
+  max-width: 90vw;
+  position: absolute;
+
+  /*!* Safari *!*/
+  /*-webkit-transform: rotate(-10deg);*/
+
+  /*!* Firefox *!*/
+  /*-moz-transform: rotate(-10deg);*/
+
+  /*!* IE *!*/
+  /*-ms-transform: rotate(-10deg);*/
+
+  /*!* Opera *!*/
+  /*-o-transform: rotate(-10deg);*/
+
+  /* Internet Explorer */
+  /* FUCK IE */
+}
+
+.mutiny {
+  animation: fadeOut 3s forwards;
+  animation-delay: 2s;
+}
+
+.coming-soon {
+  opacity: 0;
+  animation: fadeIn 5s forwards;
+  animation-delay: 3s;
+}
